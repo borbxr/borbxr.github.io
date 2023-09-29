@@ -167,7 +167,7 @@ background-color: #FFF;
 .container {
     display: grid;
     /* border: 2px black solid; */
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     grid-auto-rows: repeat(3, auto);
   }
@@ -206,7 +206,7 @@ h3 {
     padding: 2rem;
     border-top: 4px solid aliceblue;
     text-align: center;
-} */
+} */ */
 
 
 
