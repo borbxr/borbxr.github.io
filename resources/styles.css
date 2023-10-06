@@ -1,9 +1,15 @@
 /* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: Roboto, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    font-size: 16px;
+    min-height: 100vh;
+    text-align: center;
+    
 }
 
 .nav {
@@ -15,7 +21,7 @@ body {
 
 .nav img {
     width: 100px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 .nav h1 {
@@ -25,12 +31,25 @@ body {
 .nav-items {
     list-style-type: none;
     padding: 0;
+    
 }
 
 .nav-item {
     display: inline-block;
     margin-right: 20px;
+    color: #fff;
+    position: relative;
 }
+
+.nav-item a {
+    color: #fff;
+}
+
+.nav-btn a:active {
+    position: relative;
+    top: 2px;
+}
+
 
 .aboutme, .projects, #skills {
     background-color: #fff;
@@ -39,10 +58,28 @@ body {
     border-radius: 5px;
 }
 
+.welcome-section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    font-size: 2em;
+}
+
+
+
 .project-container {
     display: flex;
     flex-wrap: wrap;
 }
+
+.container {
+    display: grid;
+    /* border: 2px black solid; */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: auto;
+  }
 
 .project-item {
     flex: 1;
@@ -59,92 +96,6 @@ body {
 
 .project-name {
     font-weight: bold;
-}
-
-#skills-icons {
-    font-size: 36px;
-}
-
-.footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
-
-
-/* styles.css */
-header.nav {
-    background-image: url('bgtest.jpg'); /* Replace with the actual path to your image */
-    background-size: cover; /* This will cover the entire header */
-    background-position: center center; /* Center the image horizontally and vertically */
-    color: #fff; /* Text color on top of the image */
-    padding: 10px;
-    text-align: center;
-}
-
-/* You may need to adjust other styles (e.g., font color) for better visibility on the image */
-
-
-
-
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-  }
-
-body {
-background-color: #FFF7F0;
-font-size: 26px;
-font-family: 'Roboto', sans-serif;
-}
-
-nav {
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: aliceblue;
-    z-index: 10;
-    
-}
-
-
-
-.nav-items {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    align-items: center;
-    margin: 0;
-    margin-left: auto;
-}
-
-.aboutme {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-    padding: 50px;
-    text-align: justify;
-}
-
-
-.projects {
-    align-items: center;
-}
-
-.project-box {
-    border: 1px black solid;
-    text-align: center;
 }
 
 .project-button {
@@ -164,16 +115,7 @@ background-color: #FFF;
     align-items: center;
 }
 
-.container {
-    display: grid;
-    /* border: 2px black solid; */
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    grid-auto-rows: repeat(3, auto);
-  }
-
-
-  a {
+a {
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -181,32 +123,50 @@ background-color: #FFF;
     color: black;
   } 
 
-img {
-    width: 85px;
-    height: 85px;
-    border-radius: 100%;
-    margin:5px;
+
+
+#skills-icons {
+    font-size: 36px;
 }
 
-h1, h2, h3, article, p {
-    font-family: Helvetica, sans-serif;
-}
-
-h2 {
-    
-    font-size: 32px;
-    font-weight: bold;
-}
-
-h3 {
-    font-weight: bold;
-}
-
-.footer {
+footer {
+    display: flex;
+    flex-shrink: 0;
+    border-top: 4px solid #333;
     padding: 2rem;
-    border-top: 4px solid aliceblue;
+    position: sticky;
+    top: 100%;
+}
+
+.sm-footer { 
+    width: 100%;
+    flex-shrink: 0;
     text-align: center;
+
+}
+
+.socials a {
+    display: inline;
+}
+
+
+
+/* .social-media a {
+    display: inline;
 } */
+
+
+
+/* styles.css */
+header.nav {
+    background-image: url('equation.jpg'); /* Replace with the actual path to your image */
+    background-size: cover; /* This will cover the entire header */
+    background-position: center center; /* Center the image horizontally and vertically */
+    color: #fff; /* Text color on top of the image */
+    padding: 10px;
+    text-align: center;
+}
+
 
 
 
