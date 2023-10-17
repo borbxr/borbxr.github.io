@@ -1,6 +1,10 @@
 /* styles.css */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+* {
+    box-sizing: border-box;
+  }
+
 body {
     font-family: Roboto, sans-serif;
     background-color: #f0f0f0;
@@ -76,7 +80,8 @@ body {
 .container {
     display: grid;
     /* border: 2px black solid; */
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 10px;
     grid-auto-rows: auto;
   }
