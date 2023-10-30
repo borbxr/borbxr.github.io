@@ -3,7 +3,7 @@
 
 * {
     box-sizing: border-box;
-  }
+}
 
 body {
     font-family: Roboto, sans-serif;
@@ -13,7 +13,7 @@ body {
     font-size: 16px;
     min-height: 100vh;
     text-align: center;
-    
+
 }
 
 .nav {
@@ -22,6 +22,16 @@ body {
     padding: 10px;
     text-align: center;
 }
+
+header.nav {
+    background-image: url('equation.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
 
 .nav img {
     width: 100px;
@@ -35,7 +45,7 @@ body {
 .nav-items {
     list-style-type: none;
     padding: 0;
-    
+
 }
 
 .nav-item {
@@ -55,7 +65,9 @@ body {
 }
 
 
-.aboutme, .projects, #skills {
+.aboutme,
+.projects,
+#skills {
     background-color: #fff;
     padding: 20px;
     margin: 20px;
@@ -84,7 +96,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 10px;
     grid-auto-rows: auto;
-  }
+}
 
 .project-item {
     flex: 1;
@@ -107,12 +119,12 @@ body {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
- 
+
 }
 
 .project-btn {
-border: 1px black solid;
-background-color: #FFF;
+    border: 1px black solid;
+    background-color: #FFF;
 }
 
 
@@ -126,7 +138,7 @@ a {
     text-decoration: none;
     font-size: large;
     color: black;
-  } 
+}
 
 
 
@@ -138,12 +150,13 @@ footer {
     display: flex;
     flex-shrink: 0;
     border-top: 4px solid #333;
+    font-size: 1em;
     padding: 2rem;
     position: sticky;
     top: 100%;
 }
 
-.sm-footer { 
+.sm-footer {
     width: 100%;
     flex-shrink: 0;
     text-align: center;
@@ -154,24 +167,29 @@ footer {
     display: inline;
 }
 
+.resume-info {
+    display: flex;
+    font-size: 1.2em;
+    text-align: left;
+    padding: 12px;
+    margin: 12px;
+}
 
+.col {
+    flex: 50%;
+}
 
-/* .social-media a {
-    display: inline;
-} */
+mark {
+    background-color: #333;
+    color: #fff;
+}
 
-
-
-/* styles.css */
-header.nav {
-    background-image: url('equation.jpg'); /* Replace with the actual path to your image */
-    background-size: cover; /* This will cover the entire header */
-    background-position: center center; /* Center the image horizontally and vertically */
-    color: #fff; /* Text color on top of the image */
+.about-info {
+    font-size: 1.5em;
+    text-align: justify;
+    margin: 10px;
     padding: 10px;
-    text-align: center;
 }
 
 
-
-
+/* styles.css */
